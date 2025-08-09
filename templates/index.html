@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediksi Profitability Menu</title>
+  </head>
+  <body>
+    <h2>Masukkan Data Menu</h2>
+    <form method="post" action="/predict">
+      <input type="text" name="Price" placeholder="Harga" />
+      <input type="text" name="Feature2" placeholder="Fitur Lain" />
+      <!-- Tambah input sesuai fitur model -->
+      <button type="submit">Prediksi</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+  </body>
+</html>
